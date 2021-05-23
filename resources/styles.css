@@ -1,0 +1,172 @@
+/*Estilos generales*/
+.section-title {
+  font-size: 30px;
+  color: #58517a;
+  font-weight: bold;
+  text-transform: capitalize;
+  width: 100%;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #58517a;
+}
+.sub-title {
+  font-size: 24px;
+  color: #58517a;
+  font-weight: bold;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.sub-title:hover {
+  text-decoration: none;
+  color: #58517a;
+}
+main article {
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+nav {
+  background-color: #58517a;
+}
+main.container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 70px;
+  padding-right: 70px;
+  background-color: #eee;
+}
+header {
+  background-color: #58517a;
+}
+article {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+header .nav-link {
+  font-size: 20px;
+}
+a.text-light {
+  font-weight: normal;
+  margin-left: 20px;
+}
+a.text-light:hover {
+  color: white !important /*override estilo de bootstrap*/;
+  font-weight: bold;
+  transform: scale(1.1);
+  transition: scale 0.5s;
+}
+section p {
+  font-size: 20px;
+}
+/*FIN estulos generales*/
+/* estilos jumbotron */
+div.jumbotron {
+  background-image: url("http://www.interhanse.com/wp-content/uploads/2013/12/foto.jpg");
+  display: flex;
+}
+div.jumbotron h1,
+div.jumbotron p {
+  color: #58517a;
+  margin-right: 10%;
+}
+/* FIN estilos jumbotron */
+/* estilos bloque 2 */
+
+#text-slider .text-slider-custom-text {
+  font-size: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#text-slider .text-slider-custom-text .first-letter {
+  font-size: 30px;
+  color: #58517a;
+  font-weight: bold;
+}
+#text-slider .text-slider-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* FIN estilos bloque dos */
+/* estilos formulario */
+.form-block {
+  display: flex;
+  flex-direction: column;
+}
+.form-block .g-recaptcha {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.form-block .form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-loading {
+  display: flex;
+  justify-content: center;
+}
+/* FIN estilos formulario */
+/* estilos footer */
+footer {
+  background-color: #58517a;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 200px;
+  height: 100px;
+}
+.socials,
+.information {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.socials a,
+.information a {
+  color: white;
+}
+/*FIN  estilos footer */
+
+/*Adaptación responsive*/
+#text-block-mobile {
+  display: none;
+}
+#text-block-desktop {
+  display: flex;
+}
+@media (max-width: 480px) {
+  #text-slider {
+    display: none;
+  }
+  #text-block-desktop {
+    display: none;
+  }
+  #text-block-mobile {
+    display: flex;
+    margin-top: 0px;
+  }
+  #text-block-mobile .carousel-inner {
+    padding-bottom: 30px;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+  div.jumbotron {
+    display: none;
+  }
+  main.container {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #eee;
+  }
+  section p {
+    font-size: 14px;
+  }
+}
